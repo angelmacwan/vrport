@@ -1,0 +1,236 @@
+:root {
+  --primary: #ffc107;
+}
+.vr-btn-align {
+  width: 100%;
+}
+.sec {
+  min-height: 60vh;
+}
+p {
+  font-size: 1.3rem;
+}
+.vr-btn {
+  text-transform: uppercase;
+  border: 1px solid transparent;
+  margin: 0 0.3rem;
+  font-weight: bold;
+}
+.vr-btn:hover {
+  border: 1px solid black;
+}
+.nav-spacer {
+  background: red;
+  height: 100%;
+  width: 80%;
+}
+
+.top-bar {
+  background-color: var(--primary);
+  color: white;
+  padding: 12px;
+}
+
+.contact-icon-top {
+  float: right;
+}
+.contact-icon-top > * {
+  margin: 0 10px;
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+}
+.overlay img {
+  width: 100%;
+  height: auto;
+}
+.overlay .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.slider-text-h1 {
+  color: white;
+  background-color: var(--primary);
+  padding: 10px 25px;
+  font-size: 2.3rem;
+  font-weight: bold;
+}
+
+.grid-3cols-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-cols {
+  padding: 2rem;
+  margin: 1.5rem;
+}
+.grid-cols > h4 {
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.grid-cols > p {
+  font-size: 1.1rem;
+}
+.icon {
+  padding: 2rem;
+  font-size: 3rem;
+}
+.container-with-bg {
+  background-image: url("./images/clean.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  background-attachment: fixed;
+}
+
+#section2 {
+  background: url(./images/map_pattern_black.png);
+  background-repeat: repeat;
+  animation: bg-scroll-01 8s infinite;
+  animation-timing-function: linear;
+  background-attachment: fixed;
+}
+
+.custom-card-text {
+  background: rgba(255, 193, 7, 0.1);
+  transition: 0.3s;
+}
+.custom-card-text:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.card {
+  border-radius: 0;
+}
+.card-img {
+  border-radius: 0;
+}
+
+.card-icon {
+  background: var(--primary);
+  padding: 0.8rem;
+}
+
+.card-text-grp {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+#section3 {
+  min-height: 100vh;
+}
+
+.quote {
+  padding: 3rem 0;
+  max-width: 400px;
+}
+
+#section4 {
+  background: url(./images/city.jpeg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: auto;
+}
+
+.img-overlay {
+  background: black;
+  opacity: 0.4;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+}
+
+#section6 {
+  background: lightgray;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+}
+
+.contact-form > *:nth-child(2) {
+  background: var(--primary);
+  padding: 2rem;
+  text-align: start;
+}
+
+.form-wrapper {
+  background-color: white;
+  padding: 1rem;
+}
+.form-wrapper > * {
+  display: block;
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid gray;
+  margin: 1rem;
+  padding: 1rem;
+  text-transform: capitalize;
+}
+.form-wrapper > button {
+  background: var(--primary);
+  width: fit-content;
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+}
+.partner-logo{
+    max-width: 200px;
+    margin: 1rem;
+}
+
+.footer{
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+.f1{
+  background-color: #303030;
+  font-size: 1.6rem;
+  border-top: 5px solid var(--primary);
+  padding: 2rem;
+}
+.f2{
+  background-color: #333333;
+  padding: 3rem 0;
+}
+.f2>.buttons{
+  color: var(--primary);
+  font-size: 3rem;
+}
+.f3{
+  background-color: #303030;
+  padding: 2rem;
+}
+@keyframes bg-scroll-01 {
+  0% {
+    background-position-x: 0px;
+  }
+  100% {
+    background-position-x: 229px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  .grid-3cols-container {
+    display: block;
+  }
+  .contact-form {
+    display: block;
+  }
+}

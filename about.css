@@ -1,0 +1,20 @@
+#about-img{
+    background: url(./images/AdobeStock_115826240.jpeg);
+    background-repeat: no-repeat;
+    padding: 5rem 2rem;
+    background-position: center;
+    background-size: cover;
+}
+.body-wrapper{
+    display: flex;
+    padding: 2rem 0;
+}
+.body-wrapper > div{
+ padding: 2rem;   
+}
+
+@media only screen and (max-width: 980px){
+    .body-wrapper{
+        display: block;
+    }
+}
